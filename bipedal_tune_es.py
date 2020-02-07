@@ -11,7 +11,7 @@ if __name__ == "__main__":
         perturbation_interval=120,
         resample_probability=0.25,
         hyperparam_mutations={
-                "l2_coeff": lambda: random.uniform(0.001, 0.05),  # 0.005
+                "l2_coeff": [0.001, 0.005, 0.01, 0.05], # 0.005
                 "noise_stdev": lambda: random.uniform(0.01, 0.1),  # 0.02
                 "episodes_per_batch": [1000, 2000],  # 1000
                 "train_batch_size": [10000, 20000, 40000],  # 10000
