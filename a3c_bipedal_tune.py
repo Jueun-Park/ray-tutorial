@@ -8,6 +8,7 @@ tune.run_experiments({
         "env": "BipedalWalkerHardcore-v3",
         "stop": {"episode_reward_mean": 300},
         "config": {
+            "log_level": "INFO",
             "use_pytorch": True,
             "sample_async": False,
             "num_gpus": 0,
